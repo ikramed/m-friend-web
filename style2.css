@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://img.freepik.com/premium-photo/holiday-background-with-golden-blue-metallic-balloons_941600-18332.jpg') no-repeat center center/cover; /* صورة تعبيرية */
+
+
+   
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.animated-text {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animated-paragraph {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    animation: fadeInText 2s ease-out;
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+button {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #fff;
+    color: #ff416c;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: #ff4b2b;
+    color: #fff;
+    transform: scale(1.1);
+}
