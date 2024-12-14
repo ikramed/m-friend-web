@@ -33,5 +33,5 @@ const backButton = document.querySelector('.back-btn');
 
 // وظيفة زر Back: الانتقال إلى صفحة home.html
 backButton.addEventListener('click', () => {
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
 });
