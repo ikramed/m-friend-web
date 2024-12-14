@@ -10,6 +10,7 @@ body, html {
     background-color: #1a1a1a;
     transition: filter 1s ease;
 }
+@media only screen and (max-width:600px)
 
 /* صورة الخلفية مع تأثير blur */
 .background-image {
